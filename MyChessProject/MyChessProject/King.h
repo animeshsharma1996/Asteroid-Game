@@ -1,11 +1,13 @@
 #pragma once
 #include "Piece.h"
-class King :
-    public Piece
+#include "Block.h"
+#include "Board.h"
+
+class King : public Piece
 {
 public :
    King(bool white);
-   bool IsCastling();
+   bool HasCastled();
    void SetCastling(bool isCastling);
    bool CanMove(Board board, Block start, Block end);
 private :

@@ -1,4 +1,7 @@
 #pragma once
+#include "Block.h"
+#include "Board.h"
+
 class Piece
 {
 public :
@@ -11,7 +14,7 @@ public :
 
 	virtual bool CanMove(Board board, Block start, Block end);
 
-private :
+protected :
 	bool isKilled;
 	bool isWhite;
 };

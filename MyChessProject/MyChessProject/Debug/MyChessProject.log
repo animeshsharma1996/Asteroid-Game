@@ -1,4 +1,72 @@
 ﻿  Block.cpp
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(9,20): error C3646: 'GetBlock': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(9,20): error C2059: syntax error: '('
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(9,34): error C2238: unexpected token(s) preceding ';'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(10,30): error C2065: 'Block': undeclared identifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(10,23): error C2923: 'std::vector': 'Block' is not a valid template type argument for parameter '_Ty'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(10,23): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(10,23): error C3203: 'vector': unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Piece.h(15,42): error C2061: syntax error: identifier 'Block'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.cpp(7,2): error C2512: 'Piece': no appropriate default constructor available
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Piece.h(5,7): message : see declaration of 'Piece'
+  Board.cpp
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Piece.h(15,29): error C2061: syntax error: identifier 'Board'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.cpp(9,1): error C2556: 'std::vector<std::vector<Block,std::allocator<Block>>,std::allocator<std::vector<Block,std::allocator<Block>>>> Board::GetBlock(int,int)': overloaded function differs only by return type from 'Block Board::GetBlock(int,int)'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(9): message : see declaration of 'Board::GetBlock'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.cpp(8,40): error C2371: 'Board::GetBlock': redefinition; different basic types
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.h(9): message : see declaration of 'Board::GetBlock'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.cpp(18,51): error C2679: binary '=': no operator found which takes a right-hand operand of type 'Block *' (or there is no acceptable conversion)
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(21,1): message : could be 'Block &Block::operator =(Block &&)'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(21,1): message : or       'Block &Block::operator =(const Block &)'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Board.cpp(18,51): message : while trying to match the argument list '(_Ty, Block *)'
+          with
+          [
+              _Ty=Block
+          ]
+  King.cpp
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(8,34): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C3646: 'GetPiece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C2059: syntax error: '('
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,18): error C2238: unexpected token(s) preceding ';'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(11,22): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C3646: 'piece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\King.cpp(6,1): error C2512: 'Piece': no appropriate default constructor available
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Piece.h(5,7): message : see declaration of 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\King.cpp(24,7): error C2039: 'GetPiece': is not a member of 'Block'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(4): message : see declaration of 'Block'
+  Knight.cpp
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(8,34): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C3646: 'GetPiece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C2059: syntax error: '('
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,18): error C2238: unexpected token(s) preceding ';'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(11,22): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C3646: 'piece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Knight.cpp(4,1): error C2512: 'Piece': no appropriate default constructor available
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Piece.h(5,7): message : see declaration of 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Knight.cpp(12,8): error C2039: 'GetPiece': is not a member of 'Block'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(4): message : see declaration of 'Block'
   MyChessProject.cpp
+  Piece.cpp
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(8,34): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C3646: 'GetPiece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C2059: syntax error: '('
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,18): error C2238: unexpected token(s) preceding ';'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(11,22): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C3646: 'piece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Queen.cpp
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(8,34): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C3646: 'GetPiece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,16): error C2059: syntax error: '('
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(10,18): error C2238: unexpected token(s) preceding ';'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(11,22): error C2061: syntax error: identifier 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C3646: 'piece': unknown override specifier
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(18,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Queen.cpp(4,1): error C2512: 'Piece': no appropriate default constructor available
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Piece.h(5,7): message : see declaration of 'Piece'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Queen.cpp(12,8): error C2039: 'GetPiece': is not a member of 'Block'
+C:\Projects\Chess\MyChess\MyChessProject\MyChessProject\Block.h(4): message : see declaration of 'Block'
   Generating Code...
-  MyChessProject.vcxproj -> C:\Projects\Chess\MyChessProject\Debug\MyChessProject.exe
