@@ -43,19 +43,64 @@ bool Game::PlayerMove(Player player, int startX, int startY, int endX, int endY)
 
 bool Game::MakeMove(Move move, Player player)
 {
-	// valid player 
+    Piece sourcePiece = move.getStart().getPiece();
+    if (sourcePiece == null) {
+        return false;
+    }
 
-	// valid move? 
+    // valid player 
+    if (player != currentTurn) {
+        return false;
+    }
 
-	// kill? 
+    if (sourcePiece.isWhite() != player.isWhiteSide()) {
+        return false;
+    }
 
-	// castling? 
+    // valid move? 
+    if (!sourcePiece.canMove(board, move.getStart(),
+        move.getEnd())) {
+        return false;
+    }
 
-	// store the move 
+    // kill? 
+    Piece destPiece = move.getStart().getPiece();
+    if (destPiece != null) {
+        destPiece.setKilled(true);
+        move.setPieceKilled(destPiece);
+    }
 
-	// move piece from the stat box to end box 
+    // castling? 
+    if (sourcePiece != null && sourcePiece instanceof King
+        && sourcePiece.isCastlingMove()) {
+        move.setCastlingMove(true);
+    }
 
-	// set the current turn to the other player 
-	return false;
+    // store the move 
+    movesPlayed.add(move);
+
+    // move piece from the stat box to end box 
+    move.getEnd().setPiece(move.getStart().getPiece());
+    move.getStart.setPiece(null);
+
+    if (destPiece != null && destPiece instanceof King) {
+        if (player.isWhiteSide()) {
+            this.setStatus(GameStatus.WHITE_WIN);
+        }
+        else {
+            this.setStatus(GameStatus.BLACK_WIN);
+        }
+    }
+
+    // set the current turn to the other player 
+    if (this.currentTurn == players[0]) {
+        this.currentTurn = players[1];
+    }
+    else {
+        this.currentTurn = players[0];
+    }
+
+    return true;
 }
+
 
